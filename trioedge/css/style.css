@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    box-sizing: border-box;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    background: linear-gradient(116deg,#502870,#b6191b);
+    color: #ffffff;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: rgb(255, 255, 255) 3px solid;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    margin:0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+header .current a{
+    color: rgb(59, 26, 26);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #691212;
+    font-weight: bold;
+}
+
+/*Showcase*/
+#showcase{
+    min-height: 400px;
+    background: url('../img/wallpaper.png') no-repeat 0;
+    text-align: center;
+    color: white;
+}
+
+#showcase .logo{
+    margin-top: 70px;
+    margin-left: 50px;
+    
+}
+
+#showcase h1{
+    margin-top: 30px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/*Pricing Table*/
+#pricetable{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+#pricetable .pricing-table-wrapper{
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#pricetable .table{
+    width: 1200px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    overflow: visible;
+}
+
+#pricetable .row{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#pricetable .col{
+    flex: 10 10 25%;
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#pricetable .card{
+    background: transparent;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 3);
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+
+#pricetable .bg-1{
+    background: linear-gradient(135deg, #00f260, #0575E6);
+}
+#pricetable .bg-2{
+    background: linear-gradient(135deg, #8a2387, #f27121);
+}
+#pricetable .bg-3{
+    background: linear-gradient(135deg, #3f5efb, #fc466b);
+}
+#pricetable .bg-4{
+    background: linear-gradient(135deg, #db36a4, #f7ff00);
+}
+#pricetable .bg-5{
+    background: linear-gradient(135deg, #009FFF, #ec2F4B);
+}
+
+.card label{
+    font-size: 12px;
+    font-weight: 700; 
+}
+
+.card h3{
+    font-size: 40px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+/*Button**/
+#Button{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Button a{
+    position: relative;
+    left: 700px;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+#Button a:nth-child(2)
+{
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+}
+
+#newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    
+}
+
+#newsletter .rating{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#newsletter .rating input{
+    display: none;
+}
+
+#newsletter .rating label{
+    position: relative;
+    width: 0;
+    height: 128px;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(1);
+    text-align: center;
+    opacity: 0;
+}
+
+#newsletter .rating:hover label{
+    width: 160px;
+    opacity: 0.2;
+}
+#newsletter .rating input:hover + label, 
+#newsletter .rating input:checked + label
+{
+    filter: grayscale(0);
+    opacity: 1;
+    width: 160px; 
+}
+
+#newsletter .rating label h4{
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-50px) scale(0);
+    transition: 0.5s;
+}
+#newsletter .rating input:hover + label h4, 
+#newsletter .rating input:checked + label h4
+{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#newsletter .text
+{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+footer{
+    background: linear-gradient(135deg,#502870,#b6191b);
+    padding: 50px 0;
+    border-top: rgb(255, 255, 255) 3px solid;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    color:  #ffffff;
+    margin-right:  25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.left-col{
+    color: white;
+}
+.social-media a:hover{
+    color: #ac273b;
+}
+.contact{
+    color: rgb(255, 255, 255);
+}
+.border{
+    width: 100px;
+    height: 4px;
+
+}
+
+#inputtable{
+    max-width: 800px;
+    height: 550px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+#inputtable .form{
+    width: 100%;
+}
+
+#inputtable .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#inputtable .form .input_field label{
+    width: 200px;
+    color:  #757575;
+    margin-right:  10px;
+    font-size: 14px;
+}
+
+#inputtable .form .input_field .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease;
+}
+
+#inputtable .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+#inputtable .form .input_field .custom_select select{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+#inputtable .form .input_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+#inputtable .form .input_field .input:focus,
+#inputtable .form .input_field select:focus{
+    border: 1px solid #b6191b;
+}
+
+#inputtable .date-picker{
+    position: relative;
+    width: 100%;
+    max-width:  320px;
+    height: 40px;
+    background-color: #fff;
+    margin: 30px auto;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    user-select: none;
+}
+
+#inputtable .date-picker:hover{
+    background-color: #f3f3f3;
+}
+
+#inputtable .date-picker .selected-date{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 15px;
+}
+
+#inputtable .date-picker .dates{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #d5dbd9;
+}
+
+#inputtable .date-picker .dates.active{
+    display: block;
+}
+
+#inputtable .date-picker .dates .month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+}
+
+#inputtable .date-picker .dates .month .arrows{
+    width: 34px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 20px;
+}
+
+#inputtable .date-picker .dates .month .arrows:hover{
+    background-color: #f3f3f3;
+}
+
+#inputtable .date-picker .dates .month .arrows:active{
+    background-color: #00ca85;
+}
+
+#inputtable .date-picker .dates .days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 200px;
+}
+
+#inputtable .date-picker .dates .days .day{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #313131;
+}
+
+#inputtable .date-picker .dates .days .day.selected {
+    background-color: #00ca85;
+}
+/*pricetable order*/
+#pricetable-order{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#pricetable-order .pricing-table-wrapper{
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#pricetable-order .table{
+    width: 1200px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    overflow: visible;
+}
+
+#pricetable-order .row{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#pricetable-order .col{
+    flex: 10 10 25%;
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#pricetable-order .card{
+    background: transparent;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 3);
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+
+#pricetable-order .bg-1{
+    background: linear-gradient(135deg, #00f260, #0575E6);
+}
+#pricetable-order .bg-2{
+    background: linear-gradient(135deg, #8a2387, #f27121);
+}
+#pricetable-order .bg-3{
+    background: linear-gradient(135deg, #3f5efb, #fc466b);
+}
+#pricetable-order .bg-4{
+    background: linear-gradient(135deg, #db36a4, #f7ff00);
+}
+#pricetable-order .bg-5{
+    background: linear-gradient(135deg, #009FFF, #ec2F4B);
+}
+
+.card label{
+    font-size: 12px;
+    font-weight: 700; 
+}
+
+.card h3{
+    font-size: 40px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e9e9e9;
+    color: black;
+}
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.btn-purchase a{
+    text-decoration: none;
+    color: black;
+}
+
+#viewtable{
+    max-width: 800px;
+    height: 700px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+#viewtable .form{
+    width: 100%;
+}
+
+#viewtable .form .view_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#viewtable .form .view_field label{
+    width: 200px;
+    color:  #757575;
+    margin-right:  10px;
+    font-size: 14px;
+}
+
+#viewtable .form .view_field .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease;
+}
+
+#viewtable .form .view_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+#viewtable .form .view_field .custom_select select{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+#viewtable .form .view_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+#viewtable .form .view_field .input:focus,
+#viewtable .form .view_field select:focus{
+    border: 1px solid #b6191b;
+}
+
+#viewtable .form .view_field .content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#viewtable .form .view_field .content-table thead tr{
+    background: linear-gradient(116deg,#502870,#b6191b);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+#viewtable .form .view_field .content-table th,
+#viewtable .form .view_field .content-table td{
+    padding: 12px 15px;
+}
+
+#viewtable .form .view_field .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#view-showcase{
+    min-height: 50px;
+    background: url('../img/wallpaper.png') no-repeat 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#view-showcase h1{
+    margin: 20px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+
+#viewtable .btn{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+#viewtable .btn a{
+
+    position: relative;
+    left: 0;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}

@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+header{
+    background: linear-gradient(116deg,#502870,#b6191b);
+    color: #ffffff;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: rgb(255, 255, 255) 3px solid;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    margin:0;
+    padding: 0;
+}
+
+header li{
+    
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+header .current a{
+    color: rgb(59, 26, 26);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #691212;
+    font-weight: bold;
+}
+
+
+/*Search Box*/
+.search-box{
+    position: absolute;
+    margin: 10px auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(116deg,#502870,#b6191b);
+    /*background: #2f3640;*/
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+   
+.search-box:hover > .search-btn {
+    background: white;
+    color: black;
+}
+   
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(116deg,#502870,#b6191b);
+    /*background: #2f3640;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+   
+.search-btn > i {
+    font-size: 30px;
+}
+   
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
+
+/*Table!*/
+.table-box{
+    margin: 160px auto;
+}
+.table-row{
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    background: transparent;
+    padding: 12px 0;
+    color: black;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+}
+.table-cell{
+    display: table-cell;
+    width: 12%;
+    text-align: center;
+    padding: 4px 0px;
+    border-right: 1px solid #848686;
+    vertical-align: middle;
+}
+.table-head{
+    background:linear-gradient(116deg,#502870,#b6191b);
+    box-shadow: none;
+    color: white;
+    font-weight: 600;
+}.table-head .table-cell{
+    border-right: none;
+}
+.last-cell{
+    border-right: none;
+}
+.active-row {
+    font-weight: bold;
+    color: #802323;
+}
+.matric-width{
+    width: 8%;
+}
+.barang{
+    padding-left: 30px;
+    text-align: left;
+}
+.item{
+    padding-left:40px;
+    text-align: left;
+}
+.qty-width{
+    width: 50%;
+}
+.table-cell1{
+    display: table-cell;
+    width: 3%;
+    text-align: center;
+    padding: 4px 0px;
+    border-right: 1px solid #848686;
+    vertical-align: middle;
+    border-right: none;
+}
+
+footer{
+    background: linear-gradient(135deg,#502870,#b6191b);
+    padding: 100px 0;
+    border-top: rgb(255, 255, 255) 3px solid;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    color:  #ffffff;
+    margin-right:  25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.left-col{
+    color: white;
+}
+.social-media a:hover{
+    color: #ac273b;
+}
+.contact{
+    color: rgb(255, 255, 255);
+}
+.border{
+    width: 100px;
+    height: 4px;
+
+}
+
+#Button{
+    margin: 0;
+    padding: 0;
+}
+
+#Button a{
+    position: relative;
+    left: 100px;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+#Button a:nth-child(2)
+{
+    position: absolute;
+    left: 1600px;
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+}

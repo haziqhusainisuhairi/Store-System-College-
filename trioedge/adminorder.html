@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device.width">
+        <meta name="author" content="Trioedge">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>JPK Store System | Welcome</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js" async></script>
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="container">
+                <div id="branding">
+                    <h1>JPK Store System</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="tables1.html">ADMINISTRATOR PAGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="view-showcase">
+            <div class="container">
+                <h1>Add New Student Data</h1>
+            </div>
+        </section>
+
+        <section id="inputtable">
+            <div class="form">
+                <div class="input_field">
+                    <label>Student ID Number</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Full Name</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Identification Card Number</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>College Name</label>
+                    <div class="custom_select">
+                        <select>
+                            <option value="">Select</option>
+                            <option value="sr">Sempana Riau</option>
+                            <option value="sb">Sulok Belingkong</option>
+                            <option value="ts">Taming Sari</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <label>Phone Number</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Date of using the store</label>
+                    <div class="date-picker">
+                        <div class="selected-date"></div>
+
+                        <div class="dates">
+                            <div class="month">
+                                <div class="arrows prev-mth">&lt;</div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth">&gt;</div>
+                            </div>
+
+                            <div class="days">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="main.js"></script>
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <section id="pricetable-order">  
+            <div class="pricing-table-wrapper">
+                <div class="table">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-1">
+                                <label class="shop-item-title">>100 Litre Storage Box </label>
+                                <h3 class="shop-item-price"><sup>RM</sup>20.00</h3>
+                                <p>Storage box</p>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-2">
+                                <label class="shop-item-title">>85 Litre Storage Box</label>
+                                <h3 class="shop-item-price"><sup>RM</sup>15.00</h3>
+                                <p>Your own luggage bag</p>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-3">
+                                <label class="shop-item-title">>80 Litre Storage Box</label>
+                                <h3 class="shop-item-price"><sup>RM</sup>10.00</h3>
+                                <p>Your own luggage bag</p>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-4">
+                                <label class="shop-item-title">Pillow</label>
+                                <h3 class="shop-item-price"><sup>RM</sup>2.00</h3>
+                                <p>we will provide a plastic bag</p>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-5">
+                                <label class="shop-item-title">1 pc of Bucket</label>
+                                <h3 class="shop-item-price"><sup>RM</sup>2.00</h3>
+                                <p>Your own bucket</p>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section> 
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">RM0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button"><a href="tables1.html">Add Now</a></button>
+            
+        </section>
+        <script src="shop.js" async></script>
+    </body>
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="KKA logo bbg.png" width="80" height="80" alt="" class="logo">
+                <p class="rigths-text">© 2020 Created by Trioedge All Rights Reserved</p>
+            </div>
+            <div class="right-col">
+                
+            </div>
+            <div class="right-col">
+                <div class="contact">
+                    <h3>Our social media</h3>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a> 
+                    <a href="#"><i class="fa fa-instagram"></i></a> 
+                 </div>
+            </div>
+        </div>
+    </footer>
+</html>
